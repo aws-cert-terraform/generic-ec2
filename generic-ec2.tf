@@ -8,7 +8,7 @@ resource "aws_instance" "worker" {
   # DNS uses Amazon's internal DNS server.  There is no need to create
   # a rule to allow it
 
-  security_groups = ["ingress_ssh", "egress_http", "egress_https"]
+  
 }
 
 
