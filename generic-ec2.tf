@@ -12,9 +12,3 @@ resource "aws_instance" "worker" {
 }
 
 
-#
-# export a variable
-#
-output "host1.ip" {
-  value = "${aws_instance.host1.public_ip}"
-}
