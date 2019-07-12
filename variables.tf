@@ -25,7 +25,9 @@ variable "prefix" {
     description = "a prefix for resources to be identified"
 }
 
-
+variable "iam_profile_name" {
+    description = "Instance IAM profile"
+}
 // 
 // Tags 
 //
