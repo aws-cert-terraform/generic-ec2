@@ -21,8 +21,10 @@ variable "key_name" {
     description = "aws key pair name"
 }
 
-variable "prefix" {
-    description = "a prefix for resources to be identified"
+variable "security_groups" {
+  type        = "list"
+  default     = []
+  description = "List of security group ID's"
 }
 
 variable "iam_profile_name" {
@@ -31,6 +33,9 @@ variable "iam_profile_name" {
 // 
 // Tags 
 //
+variable "prefix" {
+    description = "a prefix for resources to be identified"
+}
 
 variable "name" {
     default = "generic-ec2"
