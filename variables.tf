@@ -21,7 +21,7 @@ variable "key_name" {
     description = "aws key pair name"
 }
 
-variable "security_groups" {
+variable "vpc_security_group_ids" {
   description = "A list of security group IDs to associate with"
   type        = list(string)
 }
