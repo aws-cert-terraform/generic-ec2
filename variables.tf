@@ -22,8 +22,8 @@ variable "key_name" {
 }
 
 variable "security_groups" {
-  type        = "string"
-  description = "List of security group ID's"
+  description = "A list of security group IDs to associate with"
+  type        = list(string)
 }
 
 variable "iam_profile_name" {
