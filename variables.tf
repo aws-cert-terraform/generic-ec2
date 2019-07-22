@@ -31,6 +31,10 @@ variable "subnet_ids" {
   type        = list(string)
 }
 
+variable "vpc_subnet_id" {
+    description = "Subnet ID"
+}
+
 variable "iam_profile_name" {
     description = "Instance IAM profile"
 }

@@ -14,6 +14,7 @@ resource "aws_instance" "worker" {
   key_name               = "${var.key_name}"  # to use a key_pair already registered in AWS
   iam_instance_profile   = "${var.iam_profile_name}"
   vpc_security_group_ids = var.vpc_security_group_ids
+  subnet_id              = "${var.vpc_subnet_id}"
   user_data              = "${data.template_file.init.rendered}"
 
   # DNS uses Amazon's internal DNS server.  There is no need to create
