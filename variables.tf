@@ -22,8 +22,7 @@ variable "key_name" {
 }
 
 variable "security_groups" {
-  type        = "list"
-  default     = []
+  type        = "string"
   description = "List of security group ID's"
 }
 
