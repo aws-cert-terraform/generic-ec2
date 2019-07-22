@@ -21,10 +21,10 @@ variable "key_name" {
     description = "aws key pair name"
 }
 
-// variable "security_groups" {
-//   type        = "string"
-//   description = "List of security group ID's"
-// }
+variable "security_groups" {
+  type        = "string"
+  description = "List of security group ID's"
+}
 
 variable "iam_profile_name" {
     description = "Instance IAM profile"
