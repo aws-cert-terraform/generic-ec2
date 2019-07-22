@@ -26,6 +26,11 @@ variable "vpc_security_group_ids" {
   type        = list(string)
 }
 
+variable "subnet_ids" {
+  description = "A list of subnet IDs"
+  type        = list(string)
+}
+
 variable "iam_profile_name" {
     description = "Instance IAM profile"
 }
