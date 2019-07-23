@@ -16,7 +16,7 @@ resource "aws_instance" "worker" {
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id              = "${var.vpc_subnet_id}"
   user_data              = "${data.template_file.init.rendered}"
-  associate_public_ip_address = "${var.public}
+  associate_public_ip_address = "${var.public}"
 
   # DNS uses Amazon's internal DNS server.  There is no need to create
   # a rule to allow it
