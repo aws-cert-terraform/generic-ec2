@@ -38,6 +38,11 @@ variable "vpc_subnet_id" {
 variable "iam_profile_name" {
     description = "Instance IAM profile"
 }
+
+variable "public" {
+    description = "Asscociate a public address"
+    default = false
+}
 // 
 // Tags 
 //
